@@ -1,0 +1,119 @@
+/* 没有写样式的已经在每个主题中实现，直接用class即可 */
+/* .theme_color_default_bg 对应主题默认背景颜色*/
+/* .theme_color_default_font 对应主题默认字体颜色*/
+/* .theme_iconcolor 对应主题默认图标颜色*/
+
+
+/* font-family */
+.font_family{
+  font-family: 'PinfFang SC';
+}
+/* 圆角及投影 */
+.radiu_boxshow{
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+/* 分割线及组件边框 */
+.border{
+  border:1px solid #dcdee2;
+}
+/* 色块背景 */
+.bg_color_1{
+  background:#f5f7fa
+}
+.bg_color_2{
+  background:#f2f5f8
+}
+.bg_color_3{
+  background:#e9eef6
+}
+.bg_color_4{
+  background:#CFD8E7
+}
+
+/******公共******/
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+.cb{
+  clear: both;
+}
+
+.tc {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.clr {
+  clear: both;
+}
+
+.ellipsis{ /*溢出隐藏... 加个指定min-width和相应title即可*/
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.margin-top-15{
+  margin-top: 15px;
+}
+.margin-bottom-15{
+  margin-bottom: 15px;
+}
+/*进行中按钮样式*/
+.ongoing-btn{
+  border: none!important;
+  border-radius: 3px;
+  background-size: 25px 25px;
+  background-color: #0ae;
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+  animation: myfirst 1s linear infinite;
+}
+@keyframes myfirst
+{
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0px 50px;
+  }
+}
+
+/*事件中心状态颜色*/
+.event-status-box .status-basic{
+  display: inline-block;
+  padding: 5px;
+  line-height: 1;
+  border-radius: 2px;
+  color: #fff;
+}
+
+/*必填图标*/
+.required-tips .s-form-item-label:before {
+  content: "*"!important;
+  color: #f51131;
+  margin-right: 4px;
+}
+/*搜索input*/
+.input-search {
+  position: relative
+}
+.input-search .search-btn{
+  position: absolute;
+  right: 5px;
+  top: 7.5px;
+}
+.status-urgency {background: linear-gradient(261.81deg, #F83C30 -6.91%, #FD7D46 111.2%);}
+.status-serious {background: linear-gradient(261.81deg, #F8306C -6.91%, #FF7092 111.2%);}
+.status-warn {background: linear-gradient(261.81deg, #F89030 -6.91%, #FDD546 111.2%);}
+.status-secondary {background: linear-gradient(261.81deg, #FB8032 -6.91%, #FD7D46 111.2%);}
+.status-prompt {background: linear-gradient(261.81deg, #3698FF -6.91%, #60ACFC 111.2%);}
+.status-normal {background: linear-gradient(261.81deg, #36B892 -6.91%, #68D380 111.2%);}
+.status-unknown { background: linear-gradient(261.81deg, #AAB1C4 -6.91%, #D5DAE7 111.2%);}
+
